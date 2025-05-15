@@ -18,7 +18,7 @@ A web-based pixel art editor that allows you to draw and paint on a custom-sized
 
 ## 📸 Screenshot
 
-`![preview](preview.png)`
+![Pixel Painter Screenshot](preview.png)
 
 ---
 
