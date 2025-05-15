@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+:root {
+    --dark-lavander: #605678;
+    --seafoam-green: #8ABFA3;
+    --soft-orange: #FFBF61;
+    --light-apricot: #FFE6A5;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech", sans-serif;
+}
+
+body {
+    background: var(--light-apricot);
+}
+
+.wrapper {
+    background-color: var(--seafoam-green);
+    border: 3.5px solid #4d8969;
+    width: 80vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+}
+
+span {
+    position: relative;
+    font-size: 22px;
+    bottom: -1px;
+}
+
+.opt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+button {
+    background-color: var(--soft-orange);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    font-size: 16px;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: 4px solid transparent;
+    border-radius: 8px;
+}
+
+input[type="color"]::-moz-color-swatch {
+    border: 4px solid transparent;
+    border-radius: 8px;
+}
+
+.canvas-container {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.gridCol {
+    display: flex;
+    border: 0.5px solid rgb(181, 181, 181);
+}
+
+.gridRow {
+    display: flex;
+    flex: 1;
+}
+
+@media only screen and (max-width:768px) {
+    .gridCol {
+        height: 0.8em;
+        width: 0.8em;
+    }
+}

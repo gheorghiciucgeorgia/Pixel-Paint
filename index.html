@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Pixel Painter is a simple pixel art editor that allows you to create pixel art images.">
+    <title>
+        Pixel Painter - Simple Pixel Art Editor
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="options">
+            <div class="opt-wrapper">
+                <div class="slider">
+                    <label for="width-range">Canvas Width</label>
+                    <input type="range" id="width-range" min="1" max="35">
+                    <span id="width-value">00</span>
+                </div>
+                <div class="slider">
+                    <label for="height-range">Canvas Height</label>
+                    <input type="range" id="height-range" min="1" max="35">
+                    <span id="height-value">00</span>
+                </div>
+            </div>
+
+            <div class="opt-wrapper">
+                <button id="submit-grid">Create Canvas</button>
+                <button id="clear-grid">Clear Canvas</button>
+                <input type="color" id="color-input">
+                <button id="erase-btn">Erase</button>
+                <button id="paint-btn">Paint</button>
+            </div>
+
+        </div>
+        <div class="canvas-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
