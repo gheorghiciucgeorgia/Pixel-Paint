@@ -29,10 +29,14 @@ A web-based pixel art editor that allows you to draw and paint on a custom-sized
 - Google Fonts: Share Tech
 - Responsive Design
 
+---
+
 ## ⚠️ Known Limitations
 
 - Canvas size is limited to 35x35 for performance.
 - There is no export-to-image feature.
+
+---
 
 ## 📁 Project Structure
 
